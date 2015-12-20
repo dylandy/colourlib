@@ -1,28 +1,9 @@
-== README
+#Colour Lib
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Static picture
 
-Things you may want to cover:
+###Naming
 
-* Ruby version
+> [artist first name]_[artist last name]-[picture name first word]_[picture name second word].[sub file format]
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+would only get the most dominated five colours 

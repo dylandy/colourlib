@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216015208) do
+ActiveRecord::Schema.define(version: 20151220164941) do
 
   create_table "colours", force: :cascade do |t|
     t.string "colour_value", limit: 255
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20151216015208) do
   create_table "items", force: :cascade do |t|
     t.string  "name",      limit: 255
     t.integer "colour_id", limit: 4
+    t.string  "artist",    limit: 255
   end
 
 end
