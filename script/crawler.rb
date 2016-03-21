@@ -17,5 +17,7 @@ module ColourPicker
   def self.go!
     initialize()
   end
+  def self.get_target_site
+  end
 end
 ColourPicker.go!

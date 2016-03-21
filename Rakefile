@@ -4,3 +4,14 @@
 require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
+
+#Added url for crawling
+namespace :colourlib do
+  task :add do
+    STDOUT.print "sitename:"
+    site_name = STDIN.gets.chomp
+    STDOUT.print "url for #{site_name}:"
+    site_url = STDIN.gets.chomp
+    STDOUT.puts "#{site_name} = #{site_url}"
+  end
+end

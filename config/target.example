@@ -1,0 +1,6 @@
+target0:
+  sitename: google
+  url: https://www.google.com
+target1:
+  sitename: yahoo 
+  url: https://tw.yahoo.com
