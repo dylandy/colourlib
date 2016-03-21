@@ -16,8 +16,10 @@ module ColourPicker
   end
   def self.go!
     initialize()
+    get_target_site()
   end
   def self.get_target_site
+    targets =  YAML::load_file("../#{File.dirname(__FILE__)}/config/target.yml")
   end
 end
 ColourPicker.go!

@@ -12,6 +12,12 @@ namespace :colourlib do
     site_name = STDIN.gets.chomp
     STDOUT.print "url for #{site_name}:"
     site_url = STDIN.gets.chomp
-    STDOUT.puts "#{site_name} = #{site_url}"
+    target = YAML::load_file("#{File.dirname(__FILE__)}/config/target.yml")
+    #initial new element
+    target["target#{(target.count).to_s}"] = {}
+    #put data into target
+    target["target#{(target.count - 1).to_s}"]["sitename"] = site_name
+    target["target#{(target.count - 1).to_s}"]["url"] = site_url
+    File.open("#{File.dirname(__FILE__)}/config/target.yml", 'w') {|f| f.write target.to_yaml }
   end
 end
